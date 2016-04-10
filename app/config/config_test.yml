@@ -11,3 +11,8 @@ framework:
 web_profiler:
     toolbar: false
     intercept_redirects: false
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        path:     '%kernel.root_dir%/data_test.db3'
