@@ -1,4 +1,4 @@
 batteries
 =========
 
-A Symfony project created on April 7, 2016, 12:06 pm.
+A Symfony3 first test project for Levi9 training
