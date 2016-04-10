@@ -1,0 +1,27 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <h1>Welcome to Recycle Batteries application</h1>
+    <p>Click <a href="{{ path('batteries_add') }}">here</a> to add batteries to the box</p>
+    <table border="1">
+        <caption>Statistics</caption>
+        <thead>
+            <tr>
+                <th><b>Battery type</b></th>
+                <th><b>Total count</b></th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for battery in batteries %}
+            <tr>
+                <td>{{ battery.type }}</td>
+                <td>{{ battery.stat_count }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="2" align="center">No batteries</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

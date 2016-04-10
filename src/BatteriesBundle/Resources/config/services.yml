@@ -1,0 +1,10 @@
+services:
+  battery_repository:
+    class: BatteriesBundle\Entity\BatteryRepository
+    factory: ['@doctrine.orm.entity_manager', getRepository]
+    arguments: ['BatteriesBundle:Battery']
+  batteries_service:
+    class: BatteriesBundle\Services\BatteriesService
+    arguments:
+      - '@doctrine.orm.entity_manager'
+      - '@battery_repository'

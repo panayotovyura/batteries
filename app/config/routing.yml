@@ -1,0 +1,4 @@
+batteries:
+    resource: "@BatteriesBundle/Controller/"
+    type:     annotation
+    prefix:   /
