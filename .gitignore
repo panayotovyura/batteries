@@ -1,6 +1,6 @@
 /.idea
 /app/config/parameters.yml
-/app/data.db3
+/app/*.db3
 /var/logs/*
 /var/cache/*
 /var/sessions/*
@@ -9,3 +9,4 @@
 !var/sessions/.gitkeep
 /var/bootstrap.php.cache
 /vendor
+/web/bundles/
