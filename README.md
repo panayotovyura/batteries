@@ -7,7 +7,8 @@ Run project:
 1. composer install
 2. php bin/console doctrine:database:create
 3. php bin/console doctrine:schema:create
-4. php bin/console server:run
+4. php bin/console assets:install
+5. php bin/console server:run
 
 PhpUnit:
 1. php bin/console doctrine:database:create --env=test
